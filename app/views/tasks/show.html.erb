@@ -1,0 +1,5 @@
+<h1><%="#{@task.title}"%></h1>
+<p><%= link_to "Update this task", edit_task_path(@task)  %></p>
+<h2><%="#{@task.details}"%></h2>
+<h2><%="#{@task.completed}"%></h2>
+<p><%= link_to "Delete this task", task_path(@task), method: :delete, data: { confirm: "Are you positive?" } %></p>
